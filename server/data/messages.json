@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "1789057825183",
+    "name": "asad",
+    "email": "am6634569@gmail.com",
+    "phone": "+923357259634",
+    "message": "hi",
+    "createdAt": "2026-09-10T16:30:25.183Z"
+  },
+  {
+    "_id": "1789057505849",
+    "name": "Sarah Khan",
+    "email": "sarah@techagency.com",
+    "phone": "+92 300 1234567",
+    "message": "Hi Muhammad, we love your portfolio and would like to discuss an e-commerce website project.",
+    "createdAt": "2026-09-10T16:25:05.849Z"
+  }
+]
