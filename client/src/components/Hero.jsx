@@ -7,7 +7,6 @@ import {
 } from 'lucide-react';
 import {
   GithubIcon,
-  LinkedinIcon,
   FacebookIcon,
   TwitterXIcon,
   WhatsAppIcon
@@ -78,22 +77,13 @@ export default function Hero({ onOpenContact }) {
             {/* Social Links */}
             <div className="flex items-center justify-center lg:justify-start gap-3.5 pt-4">
               <a
-                href="https://github.com/MuhammadAsadUsman"
+                href="https://github.com/am6634569-del"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub Profile"
                 className="w-10 h-10 rounded-full bg-[#0d121f] border border-white/10 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 hover:scale-110 transition-all duration-200"
               >
                 <GithubIcon className="w-5 h-5" />
-              </a>
-              <a
-                href="https://linkedin.com/in/MuhammadAsadUsman"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn Profile"
-                className="w-10 h-10 rounded-full bg-[#0d121f] border border-white/10 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-400/50 hover:scale-110 transition-all duration-200"
-              >
-                <LinkedinIcon className="w-5 h-5" />
               </a>
               <a
                 href="https://wa.me/923286009274"
@@ -106,11 +96,12 @@ export default function Hero({ onOpenContact }) {
                 <WhatsAppIcon className="w-5 h-5 text-emerald-400" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/1DBzx9wWbQ/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Facebook Profile"
                 className="w-10 h-10 rounded-full bg-[#0d121f] border border-white/10 flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-400/50 hover:scale-110 transition-all duration-200"
+                title="Facebook Profile"
               >
                 <FacebookIcon className="w-5 h-5" />
               </a>
