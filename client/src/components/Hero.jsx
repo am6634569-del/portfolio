@@ -9,7 +9,8 @@ import {
   GithubIcon,
   LinkedinIcon,
   FacebookIcon,
-  TwitterXIcon
+  TwitterXIcon,
+  WhatsAppIcon
 } from './Icons';
 
 export default function Hero({ onOpenContact }) {
@@ -62,10 +63,20 @@ export default function Hero({ onOpenContact }) {
                 <span>Contact Me</span>
                 <Mail className="w-4 h-4" />
               </button>
+
+              <a
+                href="https://wa.me/923286009274"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 px-5 py-3 rounded-full font-medium text-emerald-300 bg-[#072418] hover:bg-[#0c3726] border border-emerald-500/40 hover:border-emerald-400 hover:text-white transition-all duration-200"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-emerald-400" />
+                <span>WhatsApp</span>
+              </a>
             </div>
 
             {/* Social Links */}
-            <div className="flex items-center justify-center lg:justify-start gap-4 pt-4">
+            <div className="flex items-center justify-center lg:justify-start gap-3.5 pt-4">
               <a
                 href="https://github.com/MuhammadAsadUsman"
                 target="_blank"
@@ -83,6 +94,16 @@ export default function Hero({ onOpenContact }) {
                 className="w-10 h-10 rounded-full bg-[#0d121f] border border-white/10 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-400/50 hover:scale-110 transition-all duration-200"
               >
                 <LinkedinIcon className="w-5 h-5" />
+              </a>
+              <a
+                href="https://wa.me/923286009274"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="WhatsApp Chat"
+                className="w-10 h-10 rounded-full bg-[#0d121f] border border-white/10 flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:border-emerald-400/50 hover:scale-110 transition-all duration-200"
+                title="Chat on WhatsApp: 03286009274"
+              >
+                <WhatsAppIcon className="w-5 h-5 text-emerald-400" />
               </a>
               <a
                 href="https://facebook.com"
@@ -139,7 +160,7 @@ export default function Hero({ onOpenContact }) {
               </div>
             </div>
 
-            {/* Floating Info / Status Card */}
+            {/* Floating Info / Status Card (Experience 0+ Projects removed, WhatsApp added) */}
             <div className="w-full sm:w-64 glass-panel rounded-2xl p-4 border border-white/10 shadow-xl space-y-3 relative z-10">
               <div className="flex items-start gap-3">
                 <div className="p-2 rounded-lg bg-purple-500/10 text-purple-400 border border-purple-500/20 shrink-0">
@@ -162,12 +183,19 @@ export default function Hero({ onOpenContact }) {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="p-2 rounded-lg bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 shrink-0">
-                  <Code className="w-4 h-4" />
+                <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">
+                  <WhatsAppIcon className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-white">Experience</div>
-                  <div className="text-[11px] text-slate-400">0+ Projects Completed</div>
+                  <div className="text-xs font-bold text-white">WhatsApp & Call</div>
+                  <a
+                    href="https://wa.me/923286009274"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[11px] text-emerald-400 hover:underline block"
+                  >
+                    03286009274
+                  </a>
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Send, Mail, Phone, MapPin } from 'lucide-react';
+import { Send, Mail, MapPin } from 'lucide-react';
+import { WhatsAppIcon } from './Icons';
 
 export default function Footer({ onOpenContact }) {
   return (
@@ -34,19 +35,23 @@ export default function Footer({ onOpenContact }) {
             {/* Middle Info Badges */}
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm">
               <a
-                href="mailto:asadusman123@gmail.com"
+                href="mailto:asadtalokar82@gmail.com"
                 className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#111726] border border-white/10 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/30 transition-colors"
+                title="Email me"
               >
                 <Mail className="w-3.5 h-3.5 text-cyan-400" />
-                <span>asadusman123@gmail.com</span>
+                <span>asadtalokar82@gmail.com</span>
               </a>
 
               <a
-                href="tel:+923123456789"
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#111726] border border-white/10 text-slate-300 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors"
+                href="https://wa.me/923286009274"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#0d2117] border border-emerald-500/40 text-emerald-300 hover:text-white hover:bg-[#133022] transition-colors"
+                title="Chat on WhatsApp"
               >
-                <Phone className="w-3.5 h-3.5 text-emerald-400" />
-                <span>+92 312 3456789</span>
+                <WhatsAppIcon className="w-4 h-4 text-emerald-400" />
+                <span>03286009274</span>
               </a>
 
               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#111726] border border-white/10 text-slate-300">
@@ -56,10 +61,20 @@ export default function Footer({ onOpenContact }) {
             </div>
 
             {/* Right Action Button */}
-            <div className="shrink-0">
+            <div className="shrink-0 flex items-center gap-3">
+              <a
+                href="https://wa.me/923286009274"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-600/30 hover:scale-105 transition-all duration-200"
+              >
+                <WhatsAppIcon className="w-4 h-4" />
+                <span>WhatsApp</span>
+              </a>
+
               <button
                 onClick={onOpenContact}
-                className="flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg shadow-blue-600/30 hover:shadow-purple-600/50 hover:scale-105 transition-all duration-200"
+                className="flex items-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg shadow-blue-600/30 hover:shadow-purple-600/50 hover:scale-105 transition-all duration-200"
               >
                 <span>Send Message</span>
                 <Send className="w-4 h-4 rotate-12" />

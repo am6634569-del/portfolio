@@ -130,7 +130,7 @@ export default function ContactModal({ isOpen, onClose }) {
                   type="tel"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  placeholder="+92 312 3456789"
+                  placeholder="03286009274"
                   className="w-full px-4 py-2.5 rounded-xl bg-[#111726] border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-purple-500 transition-colors"
                 />
               </div>
